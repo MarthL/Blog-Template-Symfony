@@ -29,8 +29,9 @@ class ArticleFixtures extends Fixture
                 ->setDate($faker->dateTime())
                 ->setImage("https://picsum.photos/200/300?random=" . $i)
                 ->setUrl("/".$i)
-                ->setSlug(strtolower($slugger->slug($title)));
-                
+                ->setSlug(strtolower($slugger->slug($title)))
+                ->setCategory($faker->words(5, true));
+
                 // On persiste l'objet
                 $manager->persist($article);
             }
