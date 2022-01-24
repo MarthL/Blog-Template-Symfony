@@ -23,6 +23,7 @@ class ArticleFixtures extends Fixture
             {
                 // attribution des setters pour chaque objet 
                 $title = $faker->sentence(5, true);
+
                 $article = (new Article())
                 ->setTitle($title)
                 ->setContent($faker->text(100))
