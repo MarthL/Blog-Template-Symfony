@@ -3,9 +3,6 @@ security:
     # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords
     password_hashers:
         Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
-        App\Entity\User:
-            algorithm: auto
-
     # https://symfony.com/doc/current/security.html#loading-the-user-the-user-provider
     providers:
         # used to reload user from session & other features (e.g. switch_user)
@@ -20,8 +17,8 @@ security:
         main:
             form_login:
             # login = name of the route
-                login_path: login
-                check_path: login 
+                login_path: register
+                check_path: register_check
 
             lazy: true
             provider: app_user_provider
