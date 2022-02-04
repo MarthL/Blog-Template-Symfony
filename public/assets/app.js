@@ -6,9 +6,9 @@
  */
 
 // any CSS you import will output into a single css file (app.css in this case)
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './styles/app.scss';
 import './styles/parts/footer.scss';
 import './styles/parts/header.scss';
-import './styles/pages/admin.scss'
+import './styles/home.scss';

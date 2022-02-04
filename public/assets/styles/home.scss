@@ -1,0 +1,12 @@
+.hero { 
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../../img/hero.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    & h1 {
+        padding: 30vh;
+        font-weight: bold;
+    }
+}
