@@ -8,8 +8,9 @@
 
     <div class="container">
 
-        {% for article in articles %}    
-
+      <div class="row">
+        {% for article in articles %}
+          <div class="col-6">    
             <div class="card mb-5" style="max-width: 800px;">
               <div class="row g-0">
                 <div class="col-md-4">
@@ -26,8 +27,9 @@
                 </div>
               </div>
             </div>
-
+          </div>
         {% endfor %}
+      </div>
 
     </div>
 
