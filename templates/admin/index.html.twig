@@ -8,10 +8,10 @@
 
         <h1>Interface d'administration</h1>
 
-        <div class="d-grid gap-2 mt-5">
-            <button class="btn btn-primary mb-5" type="button"> <a href=""> Utilisateurs </a></button>
-            <button class="btn btn-primary" type="button"> <a href=""> Phrases </a></button>
-            *<button class="btn btn-primary" type="button"> <a href=""> Articles </a></button>
+        <div class="row mt-5">
+            <div class="col-4"> <a href="{{path('user_dashboard_index')}}"> <div class="btn btn-primary btn-lg mb-5">  Utilisateurs </div> </a> </div>
+            <div class="col-4"> <a href="{{path('quotes_dashboard_index')}}"> <div class="btn btn-primary btn-lg mb-5"> Phrases </div> </a> </div>
+            <div class="col-4"> <a href="{{path('article_dashboard_index')}}"> <div class="btn btn-primary btn-lg">  Articles </div> </a> </div>
         </div>
     </div>
 

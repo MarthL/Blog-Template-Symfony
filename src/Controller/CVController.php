@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CVController extends AbstractController
 {
     /**
-     * @Route("/c/v", name="c_v")
+     * @Route("/cv", name="cv")
      */
     public function index(): Response
     {
