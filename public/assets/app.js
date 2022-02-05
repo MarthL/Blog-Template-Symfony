@@ -14,6 +14,7 @@ import './styles/app.scss';
 import './styles/parts/footer.scss';
 import './styles/parts/header.scss';
 import './styles/home.scss';
+import './styles/buttons.scss';
 
 
 
