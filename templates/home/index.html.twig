@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+  <div class="hero mb-5">
+    <h1 class="text-center text-white" id="text__hero">Blog template</h1>
+  </div>
+  <div class="container">
+    <h2>Dernières actualités</h2>
+  </div>
+
+  <div class="fluid container content-row">
+    <div class="row">
+      {% for article in articles %}
+        <div class="col-4 mb-5">
+          <div class="card mb-5 h-100">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{article.image}}" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{ article.title }}</h5>
+                  <p class="card-text">
+                    {{article.content}}
+                  </p>
+                  <p class="card-text">
+                    Catégorie :
+                    {{article.category}}
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Created at
+                      {{article.date|date("d/m/Y")}}
+                    </small>
+                  </p>
+                  <a href="/blog/show/{{article.slug}}">
+                    <button type="button" class="btn btn-primary">Lire la suite
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+{% endblock %}
