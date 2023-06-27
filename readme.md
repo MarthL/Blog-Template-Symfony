@@ -1,5 +1,5 @@
 # Symfony Blog - Basic Features
-This project is an example of a blog application developed using the Symfony framework. It includes the basic features required for a blog, such as a home page displaying the latest articles, a list of articles, user login functionality, and an administration interface with CRUD operations. The project utilizes Twig as the template engine for rendering views. Every datas are generated thanks to Faker.
+This project is an example of a blog application developed using the Symfony framework. It includes the basic features required for a blog, such as a home page displaying the latest articles, a list of articles, user login functionality, and an administration interface with CRUD operations. The project utilizes Twig as the template engine for rendering views. Every datas are generated thanks to Faker and all assets are managed with Webpack.
 
 ## Features
 Home Page: Displays the latest articles on the home page, providing visitors with an overview of the most recent content.
