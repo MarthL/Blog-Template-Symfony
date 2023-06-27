@@ -26,7 +26,7 @@ class ArticleFixtures extends Fixture
 
                 $article = (new Article())
                 ->setTitle($title)
-                ->setContent($faker->text(100))
+                ->setContent($faker->text(500))
                 ->setDate($faker->dateTime())
                 ->setImage("https://picsum.photos/200/300?random=" . $i)
                 ->setUrl("/".$i)
