@@ -13,6 +13,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './styles/app.scss';
 import './styles/parts/footer.scss';
 import './styles/parts/header.scss';
+import './styles/parts/form.scss';
 import './styles/home.scss';
 
 
