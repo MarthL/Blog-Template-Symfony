@@ -1,2 +1,0 @@
-# blogBaptiste
-Symfony + webpack
